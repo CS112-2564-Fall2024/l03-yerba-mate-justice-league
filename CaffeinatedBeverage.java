@@ -4,10 +4,22 @@ public class CaffeinatedBeverage
     private int ounces;
     private double price;
 
+    public CaffeinatedBeverage() {
+        this.name = "";
+        this.ounces = 0;
+        this.price = 0;
+    }
+
     public CaffeinatedBeverage(String name, int ounces, double price) {
         this.name = name;
         this.ounces = ounces;
         this.price = price;
+    }
+
+    public CaffeinatedBeverage(CaffeinatedBeverage otherBeverage) {
+        this.name = otherBeverage.name;
+        this.ounces = otherBeverage.ounces;
+        this.price = otherBeverage.price;
     }
 
     public String getName() {
