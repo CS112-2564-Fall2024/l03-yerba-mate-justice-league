@@ -1,5 +1,5 @@
 public class Tea extends CaffeinatedBeverage {
-    int brewTemp;
+    protected int brewTemp;
 
     public Tea() {
         super();
@@ -30,7 +30,7 @@ public class Tea extends CaffeinatedBeverage {
     }
 
     public String toString() {
-        String formatString = "Tea: %s, ounces: %d, brewed @ %d°C, $%f.2";
+        String formatString = "Tea: %s, ounces: %d, brewed @ %d°C, $%.2f";
         return String.format(formatString, getName(), getOunces(), brewTemp, getPrice());
     }
 }
